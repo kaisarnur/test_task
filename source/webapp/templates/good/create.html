@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% load crispy_forms_filters %}
 
-{% block title %}Publishing new shop{% endblock %}
+{% block title %}Publishing new good{% endblock %}
 
 {% block content %}
-    <h1 class="text-center">Publish new shop</h1>
-    <form action="{% url "shop_create" %}" method="post" enctype="multipart/form-data">
+    <h1 class="text-center">Publish new good</h1>
+    <form action="{% url "good_form" shop_pk %}" method="post">
         {% csrf_token %}
         {{ form|crispy }}
         <button class="btn btn-primary my-5" style="width: 100%">Publish</button>

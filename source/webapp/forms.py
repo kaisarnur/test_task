@@ -10,5 +10,5 @@ class ShopForm(forms.ModelForm):
 
 class GoodForm(forms.ModelForm):
     class Meta:
-        exclude = []
+        exclude = ["shop"]
         model = Good
