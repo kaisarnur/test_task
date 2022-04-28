@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Shop{% endblock %}
+{% block content %}
+    {% if is_paginated %}
+        {% include "partial/pagination.html" %}
+    {% endif %}
+    {% if shops %}
+        <div class="row row-cols-1 row-cols-md-3">
+            {% for shop in shops %}
+                <div class="col mb-4">
+                    <div class="card text-white bg-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ shop.name }}</h5>
+                            <p class="card-text">{{ shop.description }}</p>
+                            <a href="{% url "shop_detail" shop.pk %}" class="btn btn-primary" style="width: 100%">See more</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <h1 class="text-center">No shops yet</h1>
+    {% endif %}
+    {% if is_paginated %}
+        {% include "partial/pagination.html" %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Deleting shop{% endblock %}
+
+{% block content %}
+    <h2 class="text-center">Do you want to delete {{ shop.name }}?</h2>
+    <div class="d-flex justify-content-around mt-5">
+        <form action="{% url "shop_delete" shop.pk %}" method="post">
+            {% csrf_token %}
+            <button class="btn btn-success">Yes</button>
+        </form>
+        <a href="{% url "index" %}" class="btn btn-danger">No</a>
+    </div>
+{% endblock %}
