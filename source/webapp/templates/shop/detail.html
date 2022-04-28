@@ -18,6 +18,16 @@
 
     <a href="{% url "good_form" shop.pk %}" class="btn btn-primary my-5" style="width: 100%;">Create good</a>
 
+   <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Category
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="?filter=food">Food</a>
+            <a class="dropdown-item" href="?filter=drink">Drink</a>
+            <a class="dropdown-item" href="?filter=chocolate">Chocolate</a>
+        </div>
+    </li>
 
     {% if is_paginated %}
         {% include "partial/pagination.html" %}
