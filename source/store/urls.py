@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from webapp.views import store_views, good_views
 
 urlpatterns = [
@@ -12,5 +12,6 @@ urlpatterns = [
     path("good/new/<int:shop_pk>/", good_views.GoodCreateView.as_view(), name="good_form"),
     path("good/<int:good_pk>/", good_views.GoodView.as_view(), name="good_detail"),
     path("good/<int:pk>/edit/", good_views.GoodUpdateView.as_view(), name="good_update"),
-    path("good/<int:pk>/delete/", good_views.GoodDeleteView.as_view(), name="good_delete")
+    path("good/<int:pk>/delete/", good_views.GoodDeleteView.as_view(), name="good_delete"),
+    path("", include("api.urls"))
 ]

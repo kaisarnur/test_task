@@ -1,0 +1,113 @@
+[
+{
+  "model": "webapp.shop",
+  "pk": 1,
+  "fields": {
+    "name": "Shop number 1",
+    "description": "LA",
+    "created_at": "2022-04-28T20:22:13.582Z",
+    "updated_at": "2022-04-29T01:23:32.358Z"
+  }
+},
+{
+  "model": "webapp.shop",
+  "pk": 2,
+  "fields": {
+    "name": "Shop number 2",
+    "description": "Lorem ipsum bla bla bla",
+    "created_at": "2022-04-28T20:23:36.331Z",
+    "updated_at": "2022-04-28T20:23:36.331Z"
+  }
+},
+{
+  "model": "webapp.shop",
+  "pk": 3,
+  "fields": {
+    "name": "Shop number 3",
+    "description": "Lorem ipsum three bla bla blaa",
+    "created_at": "2022-04-28T20:26:21.297Z",
+    "updated_at": "2022-04-28T20:48:16.990Z"
+  }
+},
+{
+  "model": "webapp.shop",
+  "pk": 5,
+  "fields": {
+    "name": "Shop number 5",
+    "description": "asd",
+    "created_at": "2022-04-28T22:32:57.599Z",
+    "updated_at": "2022-04-28T22:32:57.599Z"
+  }
+},
+{
+  "model": "webapp.shop",
+  "pk": 6,
+  "fields": {
+    "name": "Shop number 6",
+    "description": "six",
+    "created_at": "2022-04-28T22:34:05.637Z",
+    "updated_at": "2022-04-28T22:34:05.638Z"
+  }
+},
+{
+  "model": "webapp.shop",
+  "pk": 7,
+  "fields": {
+    "name": "Shop number 4",
+    "description": "asdasd",
+    "created_at": "2022-04-28T22:34:51.840Z",
+    "updated_at": "2022-04-28T22:34:51.840Z"
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 1,
+  "fields": {
+    "category": "food"
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 2,
+  "fields": {
+    "category": "drink"
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 3,
+  "fields": {
+    "category": "chocolate"
+  }
+},
+{
+  "model": "webapp.good",
+  "pk": 1,
+  "fields": {
+    "shop": 7,
+    "name": "Good number 1",
+    "description": "asddsadsa",
+    "category": 3,
+    "created_at": "2022-04-28T22:44:44.492Z",
+    "updated_at": "2022-04-28T22:45:06.223Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$jZquAzPACVKWv95EALCDkY$2D5lSubUjA55s1SHg4aMvwVrbHFdsCJTGSilG6WaHdQ=",
+    "last_login": "2022-04-28T22:44:00.875Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-04-28T22:43:49.212Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
